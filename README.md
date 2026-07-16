@@ -1,89 +1,204 @@
 # Xiaohongshu AI Agent
 
-> An open-source AI agent for Xiaohongshu content creation and marketing automation.
+<p align="center">
+  <strong>An Open-Source AI Agent Framework for Xiaohongshu Content Creation and Marketing Automation.</strong>
+</p>
 
-小红书 AI 内容运营助手，帮助创作者和中小商家使用 AI 提升内容生产效率。
+<p align="center">
+Build AI-powered workflows for content generation, keyword research, trend discovery, publishing assistance, and creator productivity using modern LLMs.
+</p>
 
+---
 
-## 🌟 项目介绍
+## ✨ Overview
 
-Xiaohongshu AI Agent 是一个开源 AI Agent 项目。
+Xiaohongshu AI Agent is an open-source framework that helps creators, marketers, and developers automate Xiaohongshu workflows with AI.
 
-目标是帮助：
+Instead of building isolated prompts, the framework provides intelligent agents capable of planning, generating, reviewing, and optimizing content using large language models.
 
-- 小红书创作者
-- 电商卖家
-- 内容运营人员
+Whether you're an individual creator or a business managing multiple accounts, Xiaohongshu AI Agent provides a flexible foundation for AI-native marketing automation.
 
-通过 AI 自动完成：
-
-- 商品卖点分析
-- 爆款标题生成
-- 种草笔记创作
-- 短视频脚本生成
-- 评论互动优化
-
+---
 
 ## 🚀 Features
 
-计划支持：
+- 🤖 AI-powered content generation
+- 📝 Xiaohongshu note optimization
+- 🔍 Keyword & hashtag research
+- 📈 Trend discovery
+- 💬 Comment summarization & analysis
+- 🎯 Marketing strategy planning
+- 🧠 Multi-Agent collaboration
+- 🔌 Extensible plugin architecture
+- ⚡ OpenAI API integration
+- 🌍 Local deployment support
+- 📦 Docker-ready
+- 🔧 Developer-friendly APIs
 
-- [ ] AI 标题生成
-- [ ] AI 笔记生成
-- [ ] 商品分析 Agent
-- [ ] 图片内容理解
-- [ ] 爆款内容分析
-- [ ] 多 Agent 协作
+---
 
+## 🏗 Architecture
 
-## 🏗️ 技术方向
+```text
+                    User
+                      │
+                      ▼
+              Xiaohongshu Agent
+                      │
+      ┌───────────────┼───────────────┐
+      │               │               │
+      ▼               ▼               ▼
+ Planner Agent   Writer Agent   Review Agent
+      │               │               │
+      └───────────────┼───────────────┘
+                      ▼
+               OpenAI Models
+                      │
+                      ▼
+             Xiaohongshu Workflow
+```
 
-计划架构：
-User Input
-|
-↓
-AI Agent
-|
-↓
-Prompt Engine
-|
-↓
-LLM API
+The framework separates planning, generation, and review into independent agents, making it easier to extend and customize workflows.
 
+---
 
-## 📅 Roadmap
+## 📦 Installation
 
-### Phase 1
-基础内容生成：
+### Clone Repository
 
-- 商品信息输入
-- 标题生成
-- 笔记生成
+```bash
+git clone https://github.com/meng6836355-oss/xiaohongshu-ai-agent.git
 
+cd xiaohongshu-ai-agent
+```
 
-### Phase 2
+### Install Dependencies
 
-智能运营：
+```bash
+pip install -r requirements.txt
+```
 
-- 图片分析
-- 内容优化
-- 竞品分析
+### Configure Environment
 
+Create a `.env` file.
 
-### Phase 3
+```env
+OPENAI_API_KEY=your_api_key
+```
 
-Multi-Agent：
+### Run
 
-- 内容 Agent
-- 数据 Agent
-- 营销 Agent
+```bash
+python main.py
+```
 
+---
+
+## 💡 Example
+
+Input
+
+> Generate a Xiaohongshu post introducing ChatGPT for productivity.
+
+Output
+
+```text
+Title:
+5 AI Tools That Save Me 3 Hours Every Day
+
+Content:
+I've been testing AI tools for several months...
+...
+```
+
+---
+
+## 🛣 Roadmap
+
+- [x] Content Generation
+- [x] Prompt Templates
+- [ ] Trend Analysis
+- [ ] Multi-Agent Workflow
+- [ ] Browser Automation
+- [ ] Memory System
+- [ ] Knowledge Base (RAG)
+- [ ] MCP Support
+- [ ] Function Calling
+- [ ] Workflow Engine
+- [ ] Agent Marketplace
+
+---
+
+## 🧩 Tech Stack
+
+- Python
+- OpenAI API
+- GPT Models
+- FastAPI
+- Docker
+- SQLite / PostgreSQL
+- LangGraph (planned)
+- MCP (planned)
+
+---
+
+## 📚 Documentation
+
+Documentation is currently under development.
+
+Upcoming guides include:
+
+- Quick Start
+- Architecture
+- Prompt Design
+- Plugin Development
+- Deployment
+- API Reference
+
+---
 
 ## 🤝 Contributing
 
-欢迎提交 Issue 和 Pull Request。
+We welcome contributions from the community.
 
+You can help by
+
+- Reporting bugs
+- Suggesting new features
+- Improving documentation
+- Creating plugins
+- Submitting Pull Requests
+
+Please read **CONTRIBUTING.md** before contributing.
+
+---
+
+## 🌟 Vision
+
+Our goal is to build the most powerful open-source AI Agent ecosystem for Xiaohongshu creators.
+
+We believe AI should automate repetitive marketing tasks while allowing creators to focus on creativity.
+
+---
+
+## ❤️ Community
+
+If this project helps you, please consider
+
+⭐ Star this repository
+
+🐛 Submit issues
+
+💡 Share ideas
+
+🚀 Contribute code
+
+Every contribution helps the project grow.
+
+---
 
 ## 📄 License
 
-MIT License
+Released under the MIT License.
+
+See the LICENSE file for details.
