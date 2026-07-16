@@ -31,15 +31,19 @@ def load_prompt(self):
 
     def generate(self, product):
 
-        prompt = self.prompt.replace(
-            "{product}",
-            product
-        )
+from openai_client import chat
 
-        return {
-            "prompt": prompt,
-            "product": product
-        }
+
+def generate(self, product):
+
+    prompt = self.prompt.replace(
+        "{product}",
+        product
+    )
+
+    result = chat(prompt)
+
+    return result
 
 
 if __name__ == "__main__":
