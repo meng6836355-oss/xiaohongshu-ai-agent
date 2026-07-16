@@ -1,16 +1,18 @@
+from api import generate_content
+
+
+product = """
+产品：迷你吹风机
+
+特点：
+- 小巧便携
+- 出差旅行方便
+- 风力集中
+- 快速干发
+- 不容易烫头皮
 """
-Xiaohongshu AI Agent Backend
-
-Main API entry point.
-"""
 
 
-def health_check():
-    return {
-        "status": "ok",
-        "project": "xiaohongshu-ai-agent"
-    }
+result = generate_content(product)
 
-
-if __name__ == "__main__":
-    print(health_check())
+print(result)
