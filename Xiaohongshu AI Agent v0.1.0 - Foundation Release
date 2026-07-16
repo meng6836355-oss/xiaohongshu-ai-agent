@@ -1,0 +1,114 @@
+# Xiaohongshu AI Agent v0.1.0
+
+## 🎉 Foundation Release
+
+We are excited to announce the first public release of Xiaohongshu AI Agent.
+
+Xiaohongshu AI Agent is an open-source AI framework designed to help creators and developers build intelligent content workflows using Large Language Models.
+
+---
+
+## 🚀 Highlights
+
+### AI Content Generation
+
+- OpenAI-powered content creation
+- Xiaohongshu optimized writing workflow
+- Structured content output
+
+
+### Prompt Engineering Framework
+
+Introduced a modular prompt system:
+
+- System prompts
+- Agent prompts
+- Templates
+- Evaluation framework
+
+
+### Open Source Ready
+
+Added:
+
+- MIT License
+- Contribution guidelines
+- Development roadmap
+- Architecture documentation
+
+
+---
+
+## 🏗 Technical Foundation
+
+Current architecture includes:
+
+```
+User
+
+ ↓
+
+AI Agent Workflow
+
+ ↓
+
+OpenAI Models
+
+ ↓
+
+Generated Content
+```
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/meng6836355-oss/xiaohongshu-ai-agent.git
+
+cd xiaohongshu-ai-agent
+
+pip install -r requirements.txt
+```
+
+Configure:
+
+```bash
+OPENAI_API_KEY=your_api_key
+```
+
+Run:
+
+```bash
+python main.py
+```
+
+---
+
+## 🛣 Roadmap
+
+Future releases will introduce:
+
+- Multi-Agent collaboration
+- Memory system
+- RAG knowledge base
+- MCP integration
+- Plugin ecosystem
+
+---
+
+## 🙌 Contributing
+
+Community contributions are welcome.
+
+Please read:
+
+- CONTRIBUTING.md
+
+before submitting Pull Requests.
+
+---
+
+Thank you to everyone supporting this project.
+
+⭐ Star the repository if you find it useful.
