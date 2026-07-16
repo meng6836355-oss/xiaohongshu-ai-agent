@@ -14,17 +14,19 @@ class ContentAgent:
 
 
     def load_prompt(self):
-        """
-        Load Xiaohongshu writer prompt template.
-        """
+def load_prompt(self):
 
-        prompt_path = Path(
-            "../../prompts/xhs_writer.md"
-        )
+    BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-        return prompt_path.read_text(
-            encoding="utf-8"
-        )
+    prompt_path = (
+        BASE_DIR
+        / "prompts"
+        / "xhs_writer.md"
+    )
+
+    return prompt_path.read_text(
+        encoding="utf-8"
+    )
 
 
     def generate(self, product):
