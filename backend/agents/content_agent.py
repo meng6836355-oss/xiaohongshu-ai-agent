@@ -5,7 +5,7 @@ Loads prompt templates and generates marketing content.
 """
 
 from pathlib import Path
-
+from openai_client import chat
 
 class ContentAgent:
 
