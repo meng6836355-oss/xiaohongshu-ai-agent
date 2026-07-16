@@ -1,14 +1,51 @@
 """
-Content Generation Agent
+Xiaohongshu Content Generation Agent
 
-Responsible for generating Xiaohongshu marketing content.
+Loads prompt templates and generates marketing content.
 """
+
+from pathlib import Path
 
 
 class ContentAgent:
 
+    def __init__(self):
+        self.prompt = self.load_prompt()
+
+
+    def load_prompt(self):
+        """
+        Load Xiaohongshu writer prompt template.
+        """
+
+        prompt_path = Path(
+            "../../prompts/xhs_writer.md"
+        )
+
+        return prompt_path.read_text(
+            encoding="utf-8"
+        )
+
+
     def generate(self, product):
+
+        prompt = self.prompt.replace(
+            "{product}",
+            product
+        )
+
         return {
-            "title": "AI generated title",
-            "content": f"Content for {product}"
+            "prompt": prompt,
+            "product": product
         }
+
+
+if __name__ == "__main__":
+
+    agent = ContentAgent()
+
+    result = agent.generate(
+        "迷你吹风机，便携，快速干发"
+    )
+
+    print(result)
